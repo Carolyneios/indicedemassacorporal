@@ -1,0 +1,170 @@
+body{
+    background-color: rgb(0, 0, 0);  /*cor de fundo*/
+    background-image: url(gigachad.gif);  /*imagem*/
+    background-size: 38%;          /*o tamanho da imagem*/
+    background-repeat: no-repeat; /*imagem nao repetir*/
+
+}
+
+h1{  /*os titulos das div*/
+    font-family: 'Mitr', sans-serif; /* tipo de fonte*/
+    margin: 1px;                        /*margem*/
+    padding: 20px;                         /*tamanho total do espaço da volta*/
+    background-color: rgba(73, 230, 230, 0.876);          
+    border-radius: 20px;                             /*borda arredondadaa*/
+    text-align: center;                             /*centralizar o texto*/
+
+}
+
+label{     /*peso e altura descrição*/
+
+    margin: 30px;
+}
+
+
+.butao{  /*botao de calcular imc*/
+
+    font-family: 'Mitr', sans-serif;
+    font-size: 20px;                                /*tamanho da fonte*/
+    margin: 30px;
+    padding: 10px;
+    border-radius: 8px;                                   /*borda arredondadaa*/
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.42);        /*sombra */
+    
+}
+ 
+p{   /*onde ta escrito o seu imc é*/
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    margin: 30px;
+}
+
+.peso{  /*descriçao do peso*/
+   
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: 'Mitr', sans-serif;
+
+}
+
+.altura{ /*descriçao da altura*/
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: 'Mitr', sans-serif;
+    margin-top: 0;
+    
+}
+
+footer {  /*edita o rodapé*/
+
+        font-family: 'Mitr', sans-serif;
+        background-color: rgba(4, 136, 4, 0);
+        justify-content: center;
+        position: fixed;      /* deixa o footer fixado no fundo da pag*/ 
+        display: flex;           /* deixa  o footer flexivel para*/
+        width: 100%;
+        bottom: 0vh;
+        left: 0;     
+        text-align: center;        /*centralizar os textos*/
+        padding: 5px;
+        color: rgb(255, 255, 255);
+        
+}
+
+a{     /*edita o linkedin*/
+    color: aliceblue;
+}
+
+#altura{
+    margin: 47px;
+    
+}
+
+span{   /* onde aparece o resultado */
+    color: rgba(255, 255, 255, 0.933);
+    background-color: rgba(0, 0, 0, 0.369);
+    border-radius: 10px;
+}
+
+button:hover {  /*o botao flutua*/
+    transform: scale(1.1);   /*faz efeito do botão sai pra fora*/
+    background-color: rgba(251, 253, 253, 0.217);
+}
+
+.esquerda{  /*edita a div da esquerda*/
+
+    background-color: rgba(240, 255, 255, 0.7);
+    height: 32rem;
+    width: 30rem;
+    border-radius: 20px;
+    
+}
+
+
+.direita{   /*edita a div inteira da direita*/
+    
+    height: 30rem;
+    width: 30rem;
+    border-radius: 20px;
+    background-color:  rgba(240, 255, 255, 0.7);
+   
+}
+
+.massa{   /*edita o P que ta escrito seu imc é...*/
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    margin: 5px;
+    font-family: 'Mitr', sans-serif;
+    text-align: center;
+
+}
+
+ul li{      
+
+    font-family: 'Mitr', sans-serif;
+    color: rgb(15, 3, 3);
+    list-style-type: none; /*remover marcador*/
+    padding: 3px;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+    
+}
+
+.geral{
+
+   
+    height: 20rem;
+    width: 80rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;   /*deixa as divs espaçadas*/
+    padding: 10rem;
+    margin-left: 19rem;
+    
+}
+
+.botao{
+
+    display: flex;
+    justify-content: center;    /*deixa o botão centralizado*/
+}
+
+.pesado{  
+    margin-top: 30px;
+}
+
+
+/*@media(max-width:768px) { 
+ 
+    div{
+        background-color: black;
+        display: flex;
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        margin-left: 0;
+
+    }
+}

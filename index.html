@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imc.jpg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+  </style>
+  <title>Indice de Massa Corporal</title>
+</head>
+
+<body>
+
+  <div class="geral">
+
+    <div class="esquerda">
+
+      <h1> Indíce de Massa Corporal</h1>
+
+      <div class="pesado">
+
+        <label for="peso" class="peso"> Peso (Kg) :</label>
+        <input type="number" id="peso" name="peso">
+        <br>
+
+      </div>
+
+      <label for="altura" class="altura"> Altura: </label>
+      <input type="number" id="altura" name="altura">
+      <br>
+
+      <div class="botao">
+
+        <button onclick="calcularImc()" class="butao"> Calcular IMC</button>
+
+      </div>
+
+      <br>
+      <p class="massa">Seu Indíce de Massa Corporal é: <span id="resultado"></span></p>
+
+    </div>
+
+    <div class="direita">
+
+      <h1> Classificação de IMC</h1>
+
+      <ul>
+        <li>
+          <pre> Menos de 18,5       Peso Baixo</pre>
+        </li>
+        <li>
+          <pre> Entre 18.5 e 24,9   Peso normal</pre>
+        </li>
+        <li>
+          <pre> Entre 25,0 e 29,9   Sobrepeso</pre>
+        </li>
+        <li>
+          <pre> Entre 30 e 34,9     Obesidade Grau I</pre>
+        </li>
+        <li>
+          <pre> Entre 35 e 39,9     Obesidade Grau II</pre>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+
+  <script>
+    function calcularImc() {
+      const peso = window.document.getElementById("peso").value;
+      const altura = window.document.getElementById("altura").value;
+      const imc = peso / (altura ** 2)
+      document.getElementById("resultado").textContent = imc.toFixed(2)
+    }
+
+    let tituloDinamico = document.title;
+    window.addEventListener("blur", () => {
+      document.title = " Porque você está saindo?"
+    })
+
+    window.addEventListener("focus", () => {
+      document.title = tituloDinamico
+    })
+
+  </script>
+
+  <footer>
+    <small> By Carolyne Schmidt <a href="https://www.linkedin.com/in/carolyne-schmidt-65a291128/"> Linkedin</a></small>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>
